@@ -56,19 +56,37 @@ EduLedger/
 
 <table>
   <tr>
-    <td><img src="mobile/assets/login.png" width="150"/></td>
-    <td><img src="mobile/assets/signup.png" width="150"/></td>
-    <td><img src="mobile/assets/dashboard.png" width="150"/></td>
+    <td align="center">
+      <img src="mobile/assets/login.png" width="120"/><br/>Login
+    </td>
+    <td align="center">
+      <img src="mobile/assets/signup.png" width="120"/><br/>Signup
+    </td>
+    <td align="center">
+      <img src="mobile/assets/dashboard.png" width="120"/><br/>Dashboard
+    </td>
   </tr>
   <tr>
-    <td><img src="mobile/assets/attendance.png" width="150"/></td>
-    <td><img src="mobile/assets/fees.png" width="150"/></td>
-    <td><img src="mobile/assets/notifications.png" width="150"/></td>
+    <td align="center">
+      <img src="mobile/assets/attendance.png" width="120"/><br/>Attendance
+    </td>
+    <td align="center">
+      <img src="mobile/assets/fees.png" width="120"/><br/>Fees
+    </td>
+    <td align="center">
+      <img src="mobile/assets/notifications.png" width="120"/><br/>Notifications
+    </td>
   </tr>
   <tr>
-    <td><img src="mobile/assets/settings.png" width="150"/></td>
-    <td><img src="mobile/assets/student.png" width="150"/></td>
-    <td><img src="mobile/assets/splash.png" width="150"/></td>
+    <td align="center">
+      <img src="mobile/assets/settings.png" width="120"/><br/>Settings
+    </td>
+    <td align="center">
+      <img src="mobile/assets/student.png" width="120"/><br/>Student
+    </td>
+    <td align="center">
+      <img src="mobile/assets/splash.png" width="120"/><br/>Splash
+    </td>
   </tr>
 </table>
 
