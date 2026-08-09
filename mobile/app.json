@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "EduLedger",
+    "slug": "tuition-fee",
+    "version": "1.0.0",
+    "sdkVersion": "57.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6C63FF"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#00000000"
+      },
+      "icon": "./assets/icon.png",
+      "package": "com.tuitionpro.app",
+      "permissions": [],
+      "googleServicesFile": "./google-services.json"
+    },
+    "scheme": "tuition-fee",
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4c142831-15b9-4f29-9182-e08f9d50231d"
+      }
+    }
+  }
+}

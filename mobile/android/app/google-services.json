@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "108069095387",
+    "project_id": "eduledger-26728",
+    "storage_bucket": "eduledger-26728.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108069095387:android:5ad19f88a55fc0014e89fe",
+        "android_client_info": {
+          "package_name": "com.tuitionpro.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108069095387-n18c07tilbu8gme3daodtkgnl7pvb9ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtWCGF8OwGemezG9GOCaeDmRF5otVYAH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108069095387-n18c07tilbu8gme3daodtkgnl7pvb9ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
