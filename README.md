@@ -54,18 +54,22 @@ EduLedger/
 
 ## 📸 Screenshots
 
-| Login | Signup |
-|-------|--------|
-| ![Login](mobile/assets/login.png) | ![Signup](mobile/assets/signup.png) |
+<p float="left">
+  <img src="mobile/assets/login.png" width="250" />
+  <img src="mobile/assets/signup.png" width="250" />
+</p>
 
-| Dashboard | Attendance |
-|-----------|------------|
-| ![Dashboard](mobile/assets/dashboard.png) | ![Attendance](mobile/assets/attendance.png) |
+<p float="left">
+  <img src="mobile/assets/dashboard.png" width="250" />
+  <img src="mobile/assets/attendance.png" width="250" />
+</p>
 
-| Fees | Notifications | Settings | Student |
-|------|---------------|----------|---------|
-| ![Fees](mobile/assets/fees.png) | ![Notifications](mobile/assets/notifications.png) | ![Settings](mobile/assets/settings.png) | ![Student](mobile/assets/student.png) |
-
+<p float="left">
+  <img src="mobile/assets/fees.png" width="250" />
+  <img src="mobile/assets/notifications.png" width="250" />
+  <img src="mobile/assets/settings.png" width="250" />
+  <img src="mobile/assets/student.png" width="250" />
+</p>
 
 ## 🚀 Getting Started
 
