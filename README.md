@@ -52,13 +52,20 @@ EduLedger/
 ├── 🎛 context/ → AuthContext, ThemeContext, MonthContext
 └── 🖼 assets/ → App icon, splash screen
 
-
 ## 📸 Screenshots
 
-![Dashboard](screenshots/dashboard.png)
-![Students](screenshots/students.png)
-![Fees](screenshots/fees.png)
----
+| Login | Signup |
+|-------|--------|
+| ![Login](mobile/assets/login.png) | ![Signup](mobile/assets/signup.png) |
+
+| Dashboard | Attendance |
+|-----------|------------|
+| ![Dashboard](mobile/assets/dashboard.png) | ![Attendance](mobile/assets/attendance.png) |
+
+| Fees | Notifications | Settings | Student |
+|------|---------------|----------|---------|
+| ![Fees](mobile/assets/fees.png) | ![Notifications](mobile/assets/notifications.png) | ![Settings](mobile/assets/settings.png) | ![Student](mobile/assets/student.png) |
+
 
 ## 🚀 Getting Started
 
