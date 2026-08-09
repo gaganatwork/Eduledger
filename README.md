@@ -1,4 +1,4 @@
-# 📚 EduLedger — Tuition Fee Management App
+# 📚 EduLedger — Fee Management App
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
