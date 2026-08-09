@@ -54,22 +54,30 @@ EduLedger/
 
 ## 📸 Screenshots
 
-<p float="left">
-  <img src="mobile/assets/login.png" width="250" />
-  <img src="mobile/assets/signup.png" width="250" />
+<!-- Row 1 -->
+<p align="center">
+  <img src="mobile/assets/login.png" width="200" />
+  <img src="mobile/assets/signup.png" width="200" />
 </p>
 
-<p float="left">
-  <img src="mobile/assets/dashboard.png" width="250" />
-  <img src="mobile/assets/attendance.png" width="250" />
+<!-- Row 2 -->
+<p align="center">
+  <img src="mobile/assets/dashboard.png" width="200" />
+  <img src="mobile/assets/attendance.png" width="200" />
 </p>
 
-<p float="left">
-  <img src="mobile/assets/fees.png" width="250" />
-  <img src="mobile/assets/notifications.png" width="250" />
-  <img src="mobile/assets/settings.png" width="250" />
-  <img src="mobile/assets/student.png" width="250" />
+<!-- Row 3 -->
+<p align="center">
+  <img src="mobile/assets/fees.png" width="200" />
+  <img src="mobile/assets/notifications.png" width="200" />
 </p>
+
+<!-- Row 4 -->
+<p align="center">
+  <img src="mobile/assets/settings.png" width="200" />
+  <img src="mobile/assets/student.png" width="200" />
+</p>
+
 
 ## 🚀 Getting Started
 
