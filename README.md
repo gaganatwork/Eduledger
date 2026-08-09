@@ -2,13 +2,7 @@
 
 > A mobile app for tuition centers and private teachers to manage student records, track monthly fees, take daily attendance, and get instant alerts for pending payments.
 
----
-
-## Screenshots
-
-| Dashboard | Fee Tracking | Attendance | Settings |
-|-----------|-------------|------------|----------|
-| ![Dashboard](https://via.placeholder.com/150x300/6C63FF/ffffff?text=Dashboard) | ![Fees](https://via.placeholder.com/150x300/6C63FF/ffffff?text=Fees) | ![Attendance](https://via.placeholder.com/150x300/6C63FF/ffffff?text=Attendance) | ![Settings](https://via.placeholder.com/150x300/6C63FF/ffffff?text=Settings) |
+**Developed by Gaganjot Singh** — exegaganjot@gmail.com
 
 ---
 
@@ -16,14 +10,14 @@
 
 - **Authentication** — Email/password signup, email verification, forgot password, profile setup
 - **Student Management** — Add, edit, delete students with search by name or phone
-- **Fee Tracking** — Monthly auto-generated records, mark Full / Half / Missing / Absent
+- **Fee Tracking** — Monthly auto-generated records, mark Full / Half / Missing / Absent per student
 - **Daily Attendance** — Tap to mark absent, holiday toggle, saves and syncs automatically
-- **Dashboard** — Collection stats, today's attendance summary, 6-month trend chart
-- **Notifications** — Auto alerts for missing/partial fees, grouped Today/Earlier
-- **Dark Mode** — Full dark theme toggle, persists across restarts
+- **Dashboard** — Collection stats, today's attendance card, 6-month trend chart
+- **Notifications** — Auto alerts for missing/partial fees, grouped Today / Earlier sections
+- **Dark Mode** — Full dark theme toggle, persists across app restarts
 - **Settings** — Edit profile, change password, delete account
-- **Offline First** — Works without internet, syncs to Firebase when online
-- **Cloud Backup** — Firestore sync per user, auto-restore on reinstall
+- **Offline First** — Works without internet, syncs to Firebase Firestore when online
+- **Cloud Backup** — Per-user Firestore sync, auto-restores on reinstall
 
 ---
 
@@ -44,23 +38,28 @@
 ## Project Structure
 
 ```
-new_app/
-├── backend/                  → Node.js + Express + MongoDB API
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── utils/
+EduLedger/
+├── backend/                        → Node.js + Express + MongoDB API
+│   ├── controllers/                → auth, student, fee, dashboard, notification
+│   ├── models/                     → User, Student, FeeRecord, Notification
+│   ├── routes/                     → /api/auth, /api/students, /api/fees, etc.
+│   ├── middleware/auth.js          → JWT protect middleware
+│   ├── utils/notificationScheduler.js
+│   ├── seed.js
 │   └── server.js
-└── mobile/                   → React Native (Expo) app
+└── mobile/                         → React Native (Expo) app
     ├── app/
-    │   ├── (tabs)/           → Dashboard, Students, Fees, Alerts, Attendance, Settings
-    │   └── student/          → Add, View, Edit student screens
-    ├── database/             → SQLite schema + CRUD
-    ├── services/             → Firebase Firestore sync
-    ├── context/              → Auth, Theme, Month contexts
-    ├── components/           → Reusable UI components
-    └── constants/            → Colors (light + dark)
+    │   ├── (tabs)/                 → Dashboard, Students, Fees, Alerts, Attendance, Settings
+    │   ├── student/                → Add, View, Edit student screens
+    │   ├── login.js
+    │   ├── verify-email.js
+    │   └── setup-profile.js
+    ├── database/db.js              → SQLite schema + all CRUD operations
+    ├── services/firebase.js        → Firestore sync + offline queue
+    ├── context/                    → AuthContext, ThemeContext, MonthContext
+    ├── components/                 → FloatingCard, StatusBadge, MonthPicker, etc.
+    ├── constants/colors.js         → Light + Dark theme palettes
+    └── assets/                     → App icon, splash screen
 ```
 
 ---
@@ -73,17 +72,15 @@ new_app/
 cd backend
 npm install
 cp .env.example .env
-# Fill in your MONGO_URI and JWT_SECRET in .env
+# Fill in MONGO_URI and JWT_SECRET in .env
 npm run dev
 ```
 
-### Mobile (Build APK)
+### Mobile — Build APK
 
 ```bash
 cd mobile
 npm install --legacy-peer-deps
-
-# Build release APK
 cd android
 .\gradlew assembleRelease
 ```
@@ -106,7 +103,7 @@ JWT_SECRET=your_jwt_secret
 JWT_EXPIRES_IN=7d
 ```
 
-> **Note:** `google-services.json` (Firebase config) is not included in this repo. Add your own from the Firebase Console.
+> `google-services.json` is not included. Add your own Firebase config file at `mobile/android/app/google-services.json`
 
 ---
 
@@ -120,13 +117,8 @@ JWT_EXPIRES_IN=7d
 | Platform | Android |
 | Min SDK | 24 (Android 7.0+) |
 | Target SDK | 36 |
-
----
-
-## Developer
-
-**Gaganjot Singh**
-📧 exegaganjot@gmail.com
+| Fee Month Range | July 2026 – July 2027 |
+| Attendance Range | August 2026 – August 2027 |
 
 ---
 
