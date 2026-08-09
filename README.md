@@ -1,4 +1,4 @@
-# EduLedger — Tuition Fee Management App
+# EduLedger —  Fee Management App
 
 > A mobile app for tuition centers and private teachers to manage student records, track monthly fees, take daily attendance, and get instant alerts for pending payments.
 
