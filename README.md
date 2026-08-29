@@ -140,6 +140,4 @@ Attendance Range: August 2026 – August 2027
 MIT License — feel free to use, modify, and share with attribution.
 
 
-This version is **GitHub‑ready**: badges, emojis, tables, and sections all render cleanly.  
-
-👉 Do you want me to also add a **“Screenshots” section** with placeholders, so you can later drop in app screenshots to make the README visually appealing?
+T
