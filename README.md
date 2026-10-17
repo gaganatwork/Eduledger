@@ -40,3 +40,28 @@ A mobile + backend solution for tuition centers and private teachers to manage s
 
 ## 📂 Project Structure
 EduLedger/ ├── 📦 backend/ → Node.js + Express + MongoDB API │ ├── 📂 controllers/ → auth, student, fee, dashboard, notification │ ├── 📂 models/ → User, Student, FeeRecord, Notification │ ├── 📂 routes/ → /api/auth, /api/students, /api/fees │ ├── 🛡 middleware/auth.js → JWT protect middleware │ └── ⚙️ server.js └── 📱 mobile/ → React Native (Expo) app ├── 📂 app/ → Dashboard, Students, Fees, Alerts, Attendance, Settings ├── 💾 database/db.js → SQLite schema + CRUD + safe connection ├── ☁️ services/firebase.js → Firestore sync + offline queue ├── 🎛 context/ → AuthContext, SyncContext, ThemeContext, MonthContext ├── 🧩 components/ → StatusBadge, MonthPicker, LoadingScreen, etc. ├── 🔧 utils/ → receiptUtils, timeAgo └── 🖼 assets/ → App icon, splash screen
+
+
+
+
+
+---
+
+## 🚀 Getting Started
+
+### Backend
+
+```bash
+cd backend
+npm install
+cp .env.example .env
+# Fill in MONGO_URI and JWT_SECRET
+npm run dev
+
+
+cd mobile
+npm install
+cd android
+.\gradlew assembleRelease
+
+android/app/build/outputs/apk/release/app-release.apk
